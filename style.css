@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(128, 113, 113);
+    background-color: rgb(40, 18, 61);
 }
 /*.container{
     display: flex;
@@ -8,7 +8,6 @@ body{
 }
 */
 .container{
-    background-color: blue;
     position: relative;
     margin-top: 100px;
     max-width: 1000px;
@@ -39,8 +38,42 @@ body{
 
 .overlayMenu{
     background-color: rgb(100, 13, 182);
+    color: rgb(205, 152, 255);
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.showOverlayMenu{
+    opacity: 1;
+}
+li{
+    list-style: none;
+    font-size: 25px;
+    padding: 7px;
+    cursor: pointer;
+    user-select: none;
+}
+li:hover{
+    opacity: 0.8;
+}
+ul{
+    transition: all 1s ease;
+}
+.moveUlTagUp{
+    transform: translateY(-12px);
+}
+.middleMenu{
+    transition: all 1s ease;
+}
+.ourPic{
+    width:0;
+    transition: all 1s ease;
 }
